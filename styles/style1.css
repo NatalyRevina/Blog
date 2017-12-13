@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	min-height:100%; 
+}
+body{
+	font-family: "Verdana", sans-serif;
+}
+body span{
+	font-weight:bold;
+	color:  rgb(142,11,0);
+}
+.headerMain {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom, #d48bc8, #fff);
+	padding: 10px;
+	z-index: 9999;
+}
+  
+
+header {
+	width:100%;
+  height: 100px;
+  margin:0px auto;
+  z-index:0;
+}
+.picture1 img  {
+	border: 1px solid silver;
+	 margin: 10px;
+	 box-shadow: 0 0 10px silver;
+}
+.container1 {
+	position: relative;
+	height: 470px;
+	
+	padding: 25px ;
+	overflow:hidden;
+}
+.container2{
+	
+	padding: 25px;
+	overflow:hidden;
+}
+h1 {
+	font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+	font-size: 2.0em;
+	letter-spacing: 0.2em;
+	color: rgb(142,11,0);
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+	text-align: center;
+	text-transform: uppercase;
+}
+ 
+h2{
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:  rgb(142,11,0);
+	padding-left: 10px;
+}
+header span, .menu {
+	font-weight: normal;
+	color:  rgb(142,11,0);
+	display: inline-block;
+	margin-right: 150px;
+	padding-left: 10px;
+	
+}
+
+.menu a{
+	display: block;
+	float: left;
+	margin-right: 25px;
+	text-decoration: none;
+}
+
+	
+
+.about {
+	
+	padding-left: 25px;
+	margin-left: 25px;
+	/*float:right;
+ 	width:70%;
+	padding: 10px 10px 10px 10px;
+	margin-left: 25px;*/
+	}
+ iframe {
+	display: block;
+	margin: 15px auto 0 auto;
+}
+.picture1 {
+	float:left;
+ width:30%px;
+	padding: 10px 10px 10px 10px;
+}
+.container2, .trip1 .trip2{
+	vertical-align: top;
+}
+.trip1{
+	float:left;
+	width: 47%;
+	padding: 10px 10px 10px 10px;
+	
+	margin: 10px;
+}
+ .trip2{
+	float:left;
+	width: 47%;
+	 margin-bottom: 0;
+	padding: 10px 10px 10px 10px;
+	 
+}
+.trip1 h2{
+	text-align: center;
+}
+
+.trip2 h2{
+	text-align: center;
+}
+ .trip2 img{
+	float: right;
+	border: 1px solid black;
+	margin: 10px ;
+	 box-shadow: 0 0 10px gray;
+}
+.footer {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-top: 2px solid silver;
+	text-align: center;
+	padding-top: 20px;
+	color: rgb(142,11,0);
+	background: linear-gradient(to top,#d48bc8, #fff );
+}
