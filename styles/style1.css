@@ -4,7 +4,7 @@ html {
 	min-height:100%; 
 }
 body{
-	font-family: "Verdana", sans-serif;
+	font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 }
 body span{
 	font-weight:bold;
@@ -21,7 +21,6 @@ body span{
 	z-index: 9999;
 }
   
-
 header {
 	width:100%;
   height: 100px;
@@ -45,41 +44,64 @@ header {
 	padding: 25px;
 	overflow:hidden;
 }
-h1 {
-	font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-	font-size: 2.0em;
+.logo h1 {
+	
+	font-size: 1.7em;
 	letter-spacing: 0.2em;
 	color: rgb(142,11,0);
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
+	
+	margin-bottom: 0;
 }
  
-h2{
-	font-size: 1.2em;
+.logo h4 {
+	font-size: 1.0em;
 	text-transform: uppercase;
 	font-weight: bold;
 	color:  rgb(142,11,0);
 	padding-left: 10px;
+	margin-top: 15px;
 }
-header span, .menu {
-	font-weight: normal;
-	color:  rgb(142,11,0);
-	display: inline-block;
-	margin-right: 150px;
-	padding-left: 10px;
-	
-}
-
-.menu a{
-	display: block;
-	float: left;
-	margin-right: 25px;
+header .logo {
 	text-decoration: none;
 }
-
+ .menu {
+	 position: absolute;
+	float: right;
+	 top: 70px;
+	 right: 70px;
+	font-weight: normal;
+	color:  rgb(142,11,0);
+	display: block;
 	
+}
 
+header .menu a{
+	
+	display: inline-block;
+	text-decoration: none;
+	 font-size: 1em;
+    color: #ffffff;
+    margin: 5px 5px 5px;
+    padding: 5px;    
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid brown;
+	background-color: brown;
+    text-shadow: #444444 1px 1px;
+}
+header .menu a:hover {
+    transform: scale(1.05, 1.05);
+    background-color: #2222ff;
+    border-color: #ffffff;
+}
+
+	.clearfix {
+    clear: both;
+}
+h
 .about {
 	
 	padding-left: 25px;
@@ -98,36 +120,69 @@ header span, .menu {
  width:30%px;
 	padding: 10px 10px 10px 10px;
 }
-.container2, .trip1 .trip2{
+.container2, .trip{
 	vertical-align: top;
 }
-.trip1{
+h1{
+	text-align: center;
+	font-size: 1.7em;
+	letter-spacing: 0.2em;
+	color: rgb(142,11,0);
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+	text-transform: uppercase;
+}
+.container2 .trip:nth-child(even){
+    float: right;
+}
+
+.container2 .trip:hover {
+    background: linear-gradient(#cccccc, #dddddd);
+    border: 1px solid #888888;
+}
+
+.container2 .trip img {
+    width: 50%;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+ /*.pic{
+	 width: 30%;
+	float: left;
+    margin: 10px 10px 10px 0;*/
+
+ .container2  .pic {
+ width: 30%;
+    float: right;
+    margin: 10px 30px 10px 10px;
+}
+ .container2 .pic :nth-child(even) {
+	 width: 30%;
+    float: right;
+    margin: 10px 0 10px 10px;
+}
+.container2 .trip img:nth-child(odd) {
+    float: right;
+    margin: 10px 0 10px 10px;
+}
+.trip{
 	float:left;
-	width: 47%;
+	width: 45%;
 	padding: 10px 10px 10px 10px;
 	
 	margin: 10px;
 }
- .trip2{
-	float:left;
-	width: 47%;
-	 margin-bottom: 0;
-	padding: 10px 10px 10px 10px;
-	 
-}
-.trip1 h2{
+ 
+.trip h2{
 	text-align: center;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:  rgb(142,11,0);
+}
+.clearfix {
+    clear: both;
 }
 
-.trip2 h2{
-	text-align: center;
-}
- .trip2 img{
-	float: right;
-	border: 1px solid black;
-	margin: 10px ;
-	 box-shadow: 0 0 10px gray;
-}
 .footer {
 	display: block;
 	width: 100%;
