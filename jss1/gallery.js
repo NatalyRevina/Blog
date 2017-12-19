@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.trip').click(function () {
+	$('img').click(function () {
 		$(this).modal();
 	});
 });

@@ -1,29 +1,27 @@
-(function($){
-var defaults = {
-	locker: '.locker',
-	modal: '#modal'
-};
-$.fn.modal = function(settings){
-	var currentSettings = Object.assign({})
+(function ($) {
+	var defaults = {
+		overlay: '<div class="overlay"></div>',
+		modal: '<div id="modal"><a class="close fa fa-window-close"></a></div>'
+	};
 
-$(locker + ','+ modal).show();
-	var childHtml = $(this).html();
-	var child = $('<'+ this.tagName+'/>')
-$(modal).append($('<div/>')
-			.addClass('trip')
-			.append(childHtml);
-	
-			$(modal).append(child);
-	$(modal + '>a').click(function(){
-)};
+	$.fn.modal = function (settings) {
+		var currentSettings = Object.assign({}, defaults, settings);
+		var $overlay = $(currentSettings.overlay);
+		if (!$overlay.parentElement) {
+			$(document.body).append($overlay);
+		}
 
-	
-$('.locker, #modal').hide();
-$('#modal')
+		var $modal = $(currentSettings.modal);
+		if (!$modal.parentElement) {
+			$($overlay).append($modal);
+		}
 
-.children('div')
-.remove();
+		var $content = $(this).clone();
+		$modal.append($content);
 
-});
-});
-}(jQuery)
+		$modal.children('a').click(function () {
+			$overlay.remove();
+		});
+	}
+
+}(jQuery));
