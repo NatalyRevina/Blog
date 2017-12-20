@@ -187,3 +187,27 @@ footer {
 	width: 47%;
 	margin: 10px 10px 10px 20px;
 }
+form {
+	width: 60%;
+	border: none;
+	
+}
+fieldset label {
+	width: 25%;
+	display: inline-block;
+	
+}
+fieldset input, fieldset textarea{
+	width: 54%;
+	box-sizing: border-box;
+	border: 1px solid #444444;
+	border-radius: 5px;
+	padding: 5px;
+	}
+fieldsetarea {
+	min-width: 54%;
+	max-width: 
+}
+form button{
+	
+}
