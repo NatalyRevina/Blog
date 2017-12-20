@@ -22,6 +22,6 @@
 		$modal.children('a').click(function () {
 			$overlay.remove();
 		});
-	}
+	};
 
 }(jQuery));
